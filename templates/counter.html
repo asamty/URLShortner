@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+
+{% block body %}
+
+<div class="container">
+  <div class="card mt-5">
+    <div class="card-header text-center py-3">
+      <h1>Statistics for shortened  URL</h1>
+    </div>
+    <div class="px-3 py-4">
+        <h2 class="text-info">Shortened link: <a href="{{new_url}}">{{new_url}}</a></h2>
+        <h2 class="text-success">Original link: <a href="{{original_url}}">{{original_url}}</a></h2>
+        <h2 class="text-primary">Followed by link: {{counter}}</h2>
+    </div>
+  </div>
+
+{% endblock body %}
